@@ -1,0 +1,50 @@
+ {% extends "core/base.html" %}
+ {% load static %}
+
+
+
+ <!-- Home Content -->
+        {% block content %}
+        <div id="content" class="site-content">
+            <div id="blog-wrapper">
+                <div class="blog-holder center-relative">
+                    <article id="post-1" class="blog-item-holder featured-post">
+                        <div class="entry-content relative">
+                            <div class="content-1170 center-relative">
+                                {% for p in posts %}
+                                <div class="cat-links">
+                                    <ul>
+                                        <li>
+                                            <a href="#">{{p.category}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="entry-date published">{{ p.posted }}</div>
+                                <h2 class="entry-title">
+                                    <a href="{{ p.get_absolute_url }}">{{ p.title }}</a>
+                                </h2>
+                                <div class="excerpt">
+                                        {{ p.body|truncatewords:50}}
+                                        <a class="read-more" href= '#'></a>
+
+                                </div>
+                                {% endfor %}
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="clear"></div>
+                <div class="block load-more-holder">LOAD MORE ENTRIES</div>
+            </div>
+
+            <div class="featured-image-holder">
+                <div class="featured-post-image" style="background-image: url({% static 'demo-images/zen.jpg' %})"></div>
+
+
+            </div>
+            <div class="clear"></div>
+            {% endblock %}
+        </div>
+
