@@ -10,6 +10,7 @@ name = "pypi"
 django = "*"
 "psycopg2" = "*"
 django-heroku = "*"
+gunicorn = "*"
 
 
 [dev-packages]
