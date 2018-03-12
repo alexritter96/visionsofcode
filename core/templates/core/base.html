@@ -45,7 +45,7 @@
                 <nav id="header-main-menu">
                     <ul class="main-menu sm sm-clean">
                         <li><a href="{% url 'index' %}"  class="current">Home</a></li>
-                        <li><a href="about.html">Who am I?</a></li>
+                        <li><a href="{% url 'about' url='/about/' %}">Who am I?</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
@@ -70,6 +70,7 @@
                         <a href="https://www.linkedin.com/in/alexander-ritter-38a482132/"><i class="fa fa-linkedin"></i></a>
                         <a href="https://www.facebook.com/alex.ritter.paintingfishes"><i class="fa fa-facebook"></i></a>
                         <a href="https://soundcloud.com/paintingfishes"><i class="fa fa-soundcloud"></i></a>
+                        <a href="https://github.com/alexritter96"><i class="fa fa-github"></i></a>
                     </div>
                 </div>
                 <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>

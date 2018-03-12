@@ -13,3 +13,4 @@ def view_post(request, slug):
         'posts': get_object_or_404(Blog, slug=slug)
     })
 
+
