@@ -1,0 +1,46 @@
+{% extends "core/base.html" %}
+
+
+<!-- About Content -->
+        <div id="content" class="site-content">
+        	{% block content %}
+
+            <div class="page-header-image relative">
+                <img src="demo-images/01.jpg" alt="About">
+            </div>
+
+
+            <article>
+                <div class="content-1070 center-relative entry-content">
+                    <div class="content-900 center-relative">
+                        <h1 class="entry-title">{{flatpage.title }}</h1>
+                        <div class="one_half ">
+                            <p>{{ flatpage.content }}</p>
+                        </div>
+                        <div class="one_half last"><br>
+                        </div>
+                        <div class="clear"></div>
+                        <br>
+                        <br>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="page-full-width ">
+                        <div class="team-holder ">
+                            <div class="member relative one ">
+                                <img src="demo-images/profile_01.jpg" alt="">
+                                <div class="member-info">
+                                    <div class="member-name">Alex Ritter</div>
+                                    <div class="member-position">Web Developer</div>
+                                    <div class="member-content">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </article>
+            {% endblock %}
+        </div>
+
